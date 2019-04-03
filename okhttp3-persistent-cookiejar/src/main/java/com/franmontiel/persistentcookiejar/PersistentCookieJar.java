@@ -48,9 +48,9 @@ public class PersistentCookieJar implements ClearableCookieJar {
         List<Cookie> persistentCookies = new ArrayList<>();
 
         for (Cookie cookie : cookies) {
-            if (cookie.persistent()) {
+            //if (cookie.persistent()) {
                 persistentCookies.add(cookie);
-            }
+            //}
         }
         return persistentCookies;
     }
